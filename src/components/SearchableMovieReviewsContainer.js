@@ -37,8 +37,8 @@ class SearchableMovieReviewsContainer extends Component {
          id='search-input'
          type="text"
          onChange={ this.handleSearchMovieInput }/>
-         <button type="submit">Submit</button>
-         </form>
+       <button type="submit">Submit</button>
+       </form>
          <MovieReviews reviews={ this.stare.reviews }/>
        </div>
      )
