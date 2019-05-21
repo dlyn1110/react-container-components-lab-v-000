@@ -12,6 +12,6 @@ const review = ({ display_title, headline, summary_short }) => {
   )
 }
 
- const MovieReviews = ({reviews}) => <div className="review-list">{review.map(review)}</div>
+ const MovieReviews = ({reviews}) => <div className="review-list">{reviews.map(review)}</div>
 
  export default MovieReviews
