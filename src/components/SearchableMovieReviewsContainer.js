@@ -27,3 +27,21 @@ class SearchableMovieReviewsContainer extends Component {
      .then(res => res.json())
      .then(res => this.setState({ reviews: res.results }))
    }
+
+   render() {
+     return(
+       <div className="searchable-movie-reviews">
+       <form onSubmit={ this.handleSubmit }>
+       <label></label>
+       <input
+         id='search-input'
+         type="text"
+         onChange={ this.handleSearchMovieInput }/>
+         <button type="submit">Submit</button>
+         </form>
+         <MovieReviews reviews={ this.stare.reviews }/>
+       </div>
+     )
+   }
+
+export default SearchableMovieReviewsContainer
