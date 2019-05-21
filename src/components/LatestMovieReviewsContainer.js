@@ -34,3 +34,4 @@ class LatestMovieReviewsContainer extends Component {
     )
   }
 }
+export default LatestMovieReviewsContainer
